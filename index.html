@@ -2,6 +2,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" href="stylesheets/app.css"><link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:bold,thin,medium,normal,light">
+  <link rel="shortcut icon" href="/images/fav.png" type="image/png">
+  <title>Университет Ancor</title>
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/app.js"></script>
   <script>
@@ -10,6 +12,21 @@
   </script>
 </head>
 <body>
+  <div class="preloader hide">
+    <svg id="preloader" height="400" width="400">
+      <g filter="url(#goo)">
+        <circle cx="200" cy="200" r="150" class="outer"></circle>
+        <circle cx="200" cy="200" r="15" class="drop"></circle>
+      </g>
+      <defs>
+        <filter id="goo">
+          <fegaussianblur in="SourceGraphic" stddeviation="0" result="blur">
+            <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></fecolormatrix>
+          </fegaussianblur>
+        </filter>
+      </defs>
+    </svg>
+  </div>
   <div id="head">
     <div class="container">
       <div class="flex-inner"><a href="#head" class="logo">
@@ -120,7 +137,7 @@
     <div class="container"><img src="images/main_elements_1.svg" class="svg one"><img src="images/main_elements_1.svg" class="svg two"><img src="images/main_elements_3.svg" class="svg three"><img src="images/main_elements_3.svg" class="svg four"><img src="images/main_elements_2.svg" class="svg five"><img src="images/main_elements_4.svg" class="svg six"><img src="images/main_elements_4.svg" class="svg seven">
       <div data-sr="enter right, ease-in-out 100px" class="flex-inner">
         <div class="flex-item image">
-          <div class="img"><img src="images/main_photo_2.png"></div>
+          <div class="img"><img src="images/учащиеся.jpg"></div>
         </div>
         <div class="flex-item">
           <div class="text">
@@ -137,7 +154,7 @@
           </div>
         </div>
         <div class="flex-item image">
-          <div class="img"><img src="images/main_photo_1.png"></div>
+          <div class="img"><img src="images/выпускники.jpg"></div>
         </div>
       </div>
     </div>
@@ -152,41 +169,28 @@
           <div id="edu" class="flex-item program">Образование</div>
         </div>
       </div>
-      <div class="grid">
-        <div data-sr="enter left, ease-in-out 100px" class="flex-item green">
+      <div class="grid"><a data-sr="enter left, ease-in-out 100px" href="index2.html" class="flex-item green">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
           <div class="txt">
             Программа направлена на формирование и совершенствование навыков стратегического мышления и 
             операционного управления
-          </div>
-        </div>
-        <div data-sr="enter right, ease-in-out 100px" class="flex-item green1 deactive">
+          </div></a><a data-sr="enter right, ease-in-out 100px" href="index2.html" class="flex-item green1 deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div>
-        </div>
-        <div data-sr="enter left, ease-in-out 100px" class="flex-item blue deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter left, ease-in-out 100px" href="index2.html" class="flex-item blue deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div>
-        </div>
-        <div data-sr="enter right, ease-in-out 100px" class="flex-item blue1 deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter right, ease-in-out 100px" href="index2.html" class="flex-item blue1 deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div>
-        </div>
-        <div data-sr="enter left, ease-in-out 100px" class="flex-item yellow deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter left, ease-in-out 100px" href="index2.html" class="flex-item yellow deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div>
-        </div>
-        <div data-sr="enter right, ease-in-out 100px" class="flex-item green1 deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter right, ease-in-out 100px" href="index2.html" class="flex-item green1 deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div>
-        </div>
-      </div>
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a></div>
       <div class="button"><span>ХОЧУ ПОЛУЧАТЬ НОВОСТИ</span></div>
     </div>
   </div>
@@ -265,7 +269,7 @@
   <div id="partners" data-sr="enter bottom, ease-in-out 100px">
     <div class="container">
       <div class="title">НАШИ ПАРТНЕРЫ</div>
-      <div class="flex-inner"><a href="" class="flex-item"><img src="images/logo_1.svg" class="svg"></a><a href="" class="flex-item"><img src="images/logo_2.svg" class="svg"></a><a href="" class="flex-item"><img src="images/logo_3.svg" class="svg"></a><a href="" class="flex-item"><img src="images/logo_4.svg" class="svg"></a></div>
+      <div class="flex-inner"><a href="http://www.zamyshlyaev.com" class="flex-item"><img src="images/logo_1.svg" class="svg"></a><a href="http://motion.su" class="flex-item"><img src="images/logo_2.svg" class="svg"></a><a href="http://www.ancor.ru" class="flex-item"><img src="images/logo_3.svg" class="svg"></a><a href="http://case-hr.com/" class="flex-item"><img src="images/logo_4.svg" class="svg"></a></div>
     </div>
   </div>
   <div id="footer">

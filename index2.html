@@ -2,6 +2,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" href="stylesheets/app.css"><link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:bold,thin,medium,normal,light">
+  <link rel="shortcut icon" href="/images/fav.png" type="image/png">
+  <title>Университет Ancor</title>
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/app.js"></script><script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSk6fi3yogHuUL5NB9MP8LLDp8tXdCy9w&language=ru&callback=initMap">
   </script>
@@ -11,6 +13,21 @@
   </script>
 </head>
 <body id="index-two">
+  <div class="preloader hide">
+    <svg id="preloader" height="400" width="400">
+      <g filter="url(#goo)">
+        <circle cx="200" cy="200" r="150" class="outer"></circle>
+        <circle cx="200" cy="200" r="15" class="drop"></circle>
+      </g>
+      <defs>
+        <filter id="goo">
+          <fegaussianblur in="SourceGraphic" stddeviation="0" result="blur">
+            <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></fecolormatrix>
+          </fegaussianblur>
+        </filter>
+      </defs>
+    </svg>
+  </div>
   <div id="head">
     <div class="container">
       <div class="flex-inner"><a href="#head" class="logo">
@@ -21,11 +38,12 @@
           <div class="txt">КОРПОРАТИВНЫЙ <br>УНИВЕРСИТЕТ</div></a>
         <nav><a href="#institute">УНИВЕРСИТЕТ</a><a href="#programs">ПРОГРАММЫ</a><a href="#news">СОБЫТИЯ</a><a href="#partners">ПАРТНЕРЫ</a><a href="#footer">КОНТАКТЫ</a></nav>
       </div>
-      <div class="flex-inner slider">      
-        <div class="slide">
-          <div class="main">
-            <div class="title">ЛИГА<br>ПРОФ<span><img src="images/font_E.svg" class="svg"></span>ССИОНАЛОВ</div>
-          </div>
+      <div class="flex-inner">
+        <div class="main">
+          <div class="title">ЛИГА<br>ПРОФ<span><img src="images/font_E.svg" class="svg"></span>ССИОНАЛОВ</div>
+        </div>
+        <div class="slider">      
+          <div class="slide"></div>
         </div>
       </div>
     </div>
@@ -42,7 +60,7 @@
   </div>
   <div class="appriciate">
     <div class="container">
-      <div data-sr="enter bottom, ease-in-out 100px" class="title">ЭМОЦИОНАЛЬНОЕ ЛИДЕРСТВО РУКОВОДИТЕЛЯ</div>
+      <div data-sr="enter bottom, ease-in-out 100px" class="title">АЛЬФА И ОМЕГА ВАШЕГО HR-БРЕНДА:<br>АУДИТ, ПОСТРОЕНИЕ, ПРОДВИЖЕНИЕ</div>
       <div class="flex-inner">
         <div data-sr="enter left, ease-in-out 100px" class="flex-item">
           <div class="txt">
@@ -116,7 +134,7 @@
       </div>
       <div data-sr="enter bottom, ease-in-out 100px" class="flex-inner about">
         <div class="flex-item">
-          <div class="img"><img src="images/img_photo_3.png"></div>
+          <div class="img"><img src="images/photo_1.png"></div>
           <div class="social"><a href=""><img src="images/icon_soc_vk.svg" class="svg"></a><a href=""><img src="images/icon_soc_fb.svg" class="svg"></a><a href=""><img src="images/icon_soc_twt.svg" class="svg"></a></div>
         </div>
         <div class="flex-item">
@@ -135,7 +153,34 @@
               компетентности</span></div><a href="" class="more">Подробнее</a>
         </div>
       </div>
-      <div class="button"><span>ПРИНЯТЬ УЧАСТИЕ</span></div>
+      <div data-sr="enter bottom, ease-in-out 100px" class="flex-inner about-two about">
+        <div class="flex-item">
+          <div class="img"><img src="images/photo_2.png"></div>
+          <div class="social"><a href=""><img src="images/icon_soc_vk.svg" class="svg"></a><a href=""><img src="images/icon_soc_fb.svg" class="svg"></a><a href=""><img src="images/icon_soc_twt.svg" class="svg"></a></div>
+        </div>
+        <div class="flex-item">
+          <div class="title">ВЕДУЩИЙ<br>БИЗНЕС-ПРАКТИКУМА
+            - ИЛЬЯ БАЛАХНИН, PAPER PLANS
+          </div>
+          <div class="txt"><span>-</span><span>Генеральный директор и управляющий партнер Paper Planes Consulting Agency</span></div>
+          <div class="txt"><span>-</span><span>Руководитель WebInCo Russia</span></div>
+          <div class="txt"><span>-</span><span>Вице-президент IABC/Russia по инновациям</span></div>
+          <div class="txt"><span>-</span><span>Шэф-редактор Venture Business News</span></div>
+          <div class="txt"><span>-</span><span>Бизнес-тренер и коуч</span></div>
+          <div class="txt"><span>-</span><span>
+              программы по развитию эмоциональной
+              компетентности</span></div>
+          <div class="txt">
+            Клиенты: Правительство Москвы, Министерство Юстиции, Сколково, Microsoft,
+            Ростелеком, Билайн, Мегафон, SAP, М.Видео, Альфа-Банк, Сбербанк, Билайн, Unilever,
+            Coca-Cola Hellenic, Universal, Комстар, Bud, Kodak и множество других.
+            Преподаватель Русской Школы Управления, Российской академии народного
+            хозяйства и государственной службы, Университета Синергия и Московской школы PR.
+            
+          </div><a href="" class="more">Подробнее</a>
+        </div>
+      </div>
+      <div class="button-prog"><span>ПРИНЯТЬ УЧАСТИЕ</span></div>
     </div>
   </div>
   <div data-sr="enter bottom, ease-in-out 100px" class="map">
