@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="stylesheets/app.css"><link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:bold,thin,medium,normal,light">
-  <link rel="shortcut icon" href="/images/fav.png" type="image/png">
+  <link rel="stylesheet" href="stylesheets/app.css"><link rel="shortcut icon" href="/images/fav.png" type="image/png">
   <title>Университет Ancor</title>
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/app.js"></script>
@@ -14,7 +13,7 @@
 <body>
   <div class="preloader hide">
     <svg id="preloader" height="400" width="400">
-      <g filter="url(#goo)">
+      <g filter="url(#goo)" fill="#">
         <circle cx="200" cy="200" r="150" class="outer"></circle>
         <circle cx="200" cy="200" r="15" class="drop"></circle>
       </g>
@@ -28,72 +27,37 @@
     </svg>
   </div>
   <div id="head">
-    <div class="container">
-      <div class="flex-inner"><a href="#head" class="logo">
-          <div class="inner">
-            <div class="img"><img src="images/img_logo.svg" class="svg"></div>
-            <div class="logo-txt">ancor</div>
-          </div>
-          <div class="text">
-            <div class="txt move">КОРПОРАТИВНЫЙ <br>УНИВЕРСИТЕТ</div>
-          </div>
-          <div class="text-green">
-            <div class="txt">КОРПОРАТИВНЫЙ <br>УНИВЕРСИТЕТ</div>
-          </div>
-          <div class="text-blue">
-            <div class="txt">КОРПОРАТИВНЫЙ <br>УНИВЕРСИТЕТ</div>
-          </div></a>
-        <nav><a href="#institute">УНИВЕРСИТЕТ</a><a href="#programs">ПРОГРАММЫ</a><a href="#news">СОБЫТИЯ</a><a href="#partners">ПАРТНЕРЫ</a><a href="#footer">КОНТАКТЫ</a></nav>
+    <div class="flex-inner"><a href="#head" class="logo">
+        <div class="inner">
+          <div class="img"><img src="images/img_logo.svg" class="svg"></div>
+          <div class="logo-txt">ancor</div>
+        </div>
+        <div class="text">
+          <div class="txt move">КОРПОРАТИВНЫЙ <br>УНИВЕРСИТЕТ</div>
+        </div>
+        <div class="text-green">
+          <div class="txt">КОРПОРАТИВНЫЙ <br>УНИВЕРСИТЕТ</div>
+        </div>
+        <div class="text-blue">
+          <div class="txt">КОРПОРАТИВНЫЙ <br>УНИВЕРСИТЕТ</div>
+        </div></a></div>
+    <div class="flex-inner">
+      <div class="main">
+        <div class="title">Ч<span><img src="images/font_E.svg" class="svg"></span>М БОЛЬШЕ<br>ЗНАЮ, ТЕМ<br>БОЛЬ<span><img src="images/font_SH.svg" class="svg"></span>Е МОГУ</div>
       </div>
-      <div class="flex-inner">
-        <div class="main">
-          <div class="title">Ч<span><img src="images/font_E.svg" class="svg"></span>М БОЛЬШЕ<br>ЗНАЮ, ТЕМ<br>БОЛЬ<span><img src="images/font_SH.svg" class="svg"></span>Е МОГУ</div>
-          <div class="txt">
-            КОРПОРАТИВНЫЙ 
-            УНИВЕРСИТЕТ
-          </div>
-        </div>
-        <div class="slider">      
-          <div class="slide"></div>
-          <div class="slide"></div>
-          <div class="slide"></div>
-        </div>
+      <div class="slider">      
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
       </div>
     </div>
   </div>
-  <div id="institute" data-sr="enter bottom, ease-in-out 100px">
+  <div class="appriciate appriciate-one">
     <div class="container">
-      <div class="flex-item">
-        <div class="title">
-          Корпоративный университет АНКОР - это
-          образовательный центр, созданный в целях:
-        </div>
-        <div class="txt">
-          <div>- </div>
-          <div>
-            Обучения и развития персонала в соответствии
-            c долгосрочными стратегическими целями холдинга.
-          </div>
-        </div>
-        <div class="txt">
-          <div>- </div>
-          <div>
-            Создания и распространения отраслевых профессиональных
-            cтандартов через внешние образовательные проекты.
-          </div>
-        </div>
-      </div>
-      <div class="social flex-item">
-        <div class="flex-inner"><a href=""><img src="images/icon_soc_vk.svg" class="svg"></a><a href=""><img src="images/icon_soc_fb.svg" class="svg"></a><a href=""><img src="images/icon_soc_twt.svg" class="svg"></a><a href=""><img src="images/icon_soc_ytb.svg" class="svg"></a><a href=""><img src="images/icon_soc_ok.svg" class="svg"></a></div>
-      </div>
-    </div>
-  </div>
-  <div class="appriciate">
-    <div class="container">
-      <div data-sr="enter bottom, ease-in-out 100px" class="title">ЦЕННОСТИ</div>
+      <div class="title">ЦЕННОСТИ</div>
       <div class="flex-inner">
         <div class="inner">
-          <div data-sr="enter left, ease-in-out 100px" class="flex-item">
+          <div class="flex-item">
             <div class="title">ЭКСПЕРТНОСТЬ</div>
             <div class="txt">
               Преподают профессионалы своего дела:
@@ -103,7 +67,7 @@
               стандарты отрасли.
             </div>
           </div>
-          <div data-sr="enter left, ease-in-out 100px" class="flex-item">
+          <div class="flex-item">
             <div class="title">КРЕАТИВНОСТЬ</div>
             <div class="txt">
               Университет развивает нешаблонное
@@ -113,7 +77,7 @@
           </div>
         </div>
         <div class="inner">
-          <div data-sr="enter right, wait 0.5s, ease-in-out 100px" class="flex-item">
+          <div class="flex-item">
             <div class="title">ЛИДЕРСТВО</div>
             <div class="txt">
               Обучение направлено на выявление
@@ -122,11 +86,13 @@
               компании и отрасли в целом.
             </div>
           </div>
-          <div data-sr="enter right, wait 0.5s, ease-in-out 100px" class="flex-item">
+          <div class="flex-item">
             <div class="title">ЧЕЛОВЕК</div>
             <div class="txt">
               Университет помогает увидеть, оценить и реализовать
-              потенциал учащихся с тем, чтобы они смогли сделать то же самое в своей работе.
+              потенциал учащихся с тем, чтобы они смогли сделать
+              <br>
+               то же самое в своей работе.
             </div>
           </div>
         </div>
@@ -134,11 +100,8 @@
     </div>
   </div>
   <div class="block">
-    <div class="container"><img src="images/main_elements_1.svg" class="svg one"><img src="images/main_elements_1.svg" class="svg two"><img src="images/main_elements_3.svg" class="svg three"><img src="images/main_elements_3.svg" class="svg four"><img src="images/main_elements_2.svg" class="svg five"><img src="images/main_elements_4.svg" class="svg six"><img src="images/main_elements_4.svg" class="svg seven">
-      <div data-sr="enter right, ease-in-out 100px" class="flex-inner">
-        <div class="flex-item image">
-          <div class="img"><img src="images/учащиеся.jpg"></div>
-        </div>
+    <div class="container">
+      <div class="flex-inner">
         <div class="flex-item">
           <div class="text">
             <div class="title">Учащиеся</div>
@@ -146,55 +109,55 @@
           </div>
         </div>
       </div>
-      <div data-sr="enter right, ease-in-out 100px" class="flex-inner">
+      <div class="flex-inner">
         <div class="flex-item">
           <div class="text">
             <div class="title">Выпускник</div>
-            <div class="txt">Высококлассный профессионал с лидерскими качествами, способный с помощью полученных знаний и нестандартных решений раскрыть потенциал каждого сотрудника и эффективно решать поставленные задачи.</div>
+            <div class="txt">
+              Высококлассный профессионал с лидерскими качествами, способный с помощью полученных знаний и нестандартных решений раскрыть потенциал каждого сотрудника и эффективно решать поставленные задачи.
+              
+            </div>
           </div>
-        </div>
-        <div class="flex-item image">
-          <div class="img"><img src="images/выпускники.jpg"></div>
         </div>
       </div>
     </div>
   </div>
   <div id="programs">
     <div class="container">
-      <div data-sr="enter bottom, ease-in-out 100px" class="head">
+      <div class="head">
         <div class="title">ПРОГРАММЫ<br>УНИВЕРСИТЕТА</div>
-        <div data-sr="enter bottom, ease-in-out 100px" class="flex-inner">
+        <div class="flex-inner">
           <div id="rule" class="flex-item program active">Управление</div>
           <div id="finan" class="flex-item program">Лидерство</div>
           <div id="edu" class="flex-item program">Образование</div>
         </div>
       </div>
-      <div class="grid"><a data-sr="enter left, ease-in-out 100px" href="index2.html" class="flex-item green">
+      <div class="grid"><a class="flex-item green">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
           <div class="txt">
             Программа направлена на формирование и совершенствование навыков стратегического мышления и 
             операционного управления
-          </div></a><a data-sr="enter right, ease-in-out 100px" href="index2.html" class="flex-item green1 deactive">
+          </div></a><a class="flex-item green1 deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter left, ease-in-out 100px" href="index2.html" class="flex-item blue deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a class="flex-item blue deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter right, ease-in-out 100px" href="index2.html" class="flex-item blue1 deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a class="flex-item blue1 deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter left, ease-in-out 100px" href="index2.html" class="flex-item yellow deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a class="flex-item yellow deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
-          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a data-sr="enter right, ease-in-out 100px" href="index2.html" class="flex-item green1 deactive">
+          <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a><a class="flex-item green1 deactive">
           <div class="line"></div>
           <div class="title">АКАДЕМИЯ УПРАВЛЕНИЯ</div>
           <div class="txt">Программа направлена на формирование и совершенствование навыков стратегического мышления и операционного управления</div></a></div>
       <div class="button"><span>ХОЧУ ПОЛУЧАТЬ НОВОСТИ</span></div>
     </div>
   </div>
-  <div id="news" data-sr="enter bottom, ease-in-out 100px">
+  <div id="news">
     <div class="container">
       <div class="title">НОВОСТИ И СОБЫТИЯ</div>
       <div class="inner">
@@ -245,7 +208,7 @@
           </div>
         </div>
         <div class="flex-inner">
-          <div class="flex-item"><img src="images/img_logo.svg" class="svg">
+          <div class="flex-item"><img src="images/arrow.svg" class="svg">
             <div class="title">МЕМБРАННЫЙ РАСТВОРИТЕЛЬ В XXI ВЕКЕ</div>
             <div class="txt">Трехкомпонентное образование известно. Рутений расщепляет серный эфир. Скорость реакции, как и везде</div>
           </div>
@@ -258,7 +221,7 @@
               ЭТО НОРМАЛЬНO"
             </div>
           </div>
-          <div class="flex-item"><img src="images/img_logo.svg" class="svg">
+          <div class="flex-item"><img src="images/arrow.svg" class="svg">
             <div class="title">МЕМБРАННЫЙ РАСТВОРИТЕЛЬ В XXI ВЕКЕ</div>
             <div class="txt">Трехкомпонентное образование известно. Рутений расщепляет серный эфир. Скорость реакции, как и везде</div>
           </div>
@@ -266,10 +229,10 @@
       </div>
     </div>
   </div>
-  <div id="partners" data-sr="enter bottom, ease-in-out 100px">
+  <div id="partners">
     <div class="container">
       <div class="title">НАШИ ПАРТНЕРЫ</div>
-      <div class="flex-inner"><a href="http://www.zamyshlyaev.com" class="flex-item"><img src="images/logo_1.svg" class="svg"></a><a href="http://motion.su" class="flex-item"><img src="images/logo_2.svg" class="svg"></a><a href="http://www.ancor.ru" class="flex-item"><img src="images/logo_3.svg" class="svg"></a><a href="http://case-hr.com/" class="flex-item"><img src="images/logo_4.svg" class="svg"></a></div>
+      <div class="flex-inner"><a href="http://www.zamyshlyaev.com" data-sr="enter left, ease-in-out 100px" class="flex-item"><img src="images/logo_1.svg" class="svg"></a><a href="http://motion.su" data-sr="enter left, ease-in-out 100px, wait 0.5s" class="flex-item"><img src="images/logo_2.svg" class="svg"></a><a href="http://www.ancor.ru" data-sr="enter left, ease-in-out 100px, wait 1s" class="flex-item"><img src="images/logo_3.svg" class="svg"></a><a href="http://case-hr.com/" data-sr="enter left, ease-in-out 100px, wait 1.5s" class="flex-item"><img src="images/logo_4.svg" class="svg"></a><a href="http://www.paper-planes.ru" data-sr="enter right, ease-in-out 100px, wait 1.5s" class="flex-item"><img src="images/logo_5.svg" class="svg"></a></div>
     </div>
   </div>
   <div id="footer">
