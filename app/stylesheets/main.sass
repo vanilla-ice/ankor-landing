@@ -1,0 +1,911 @@
+@import 'tools/_mixins'
+@import 'tools/_helpers'
+@import 'tools/_media_queries'
+@import 'tools/_normalize'
+@import 'tools/_settings'
+@keyframes slide 
+  0% 
+    clip: rect(0, 0, 20px, 0)
+  
+  
+  30% 
+    clip: rect(0, 80px, 20px, 0)
+  
+  
+  50% 
+    clip: rect(0, 80px, 20px, 0)
+  
+  
+  80% 
+    clip: rect(0, 80px, 20px, 80px)
+  
+  
+  100% 
+    clip: rect(0, 80px, 20px, 80px)
+  
+
+
+@keyframes fade 
+  0% 
+    opacity: 1
+  
+  
+  50% 
+    opacity: 0
+  
+  
+  100% 
+    opacity: 1
+@font-face 
+  font-family: 'Ekibastuz Rg'
+  src: url('../fonts/Ekibastuz-Bold.eot')
+  src: url('../fonts/Ekibastuz-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Ekibastuz-Bold.woff') format('woff'), url('../fonts/Ekibastuz-Bold.ttf') format('truetype'),
+  font-weight: bold
+  font-style: normal
+
+@font-face 
+  font-family: 'Roboto'
+  src: url('../fonts/Roboto-Regular.eot')
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype')
+  font-weight: 300
+  font-style: normal
+@font-face 
+  font-family: 'Cervo'
+  src: url('../fonts/Cervo-Light.eot')
+  src: url('../fonts/Cervo-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Cervo-Light.woff') format('woff'), url('../fonts/Cervo-Light.ttf') format('truetype')
+  font-weight: 300
+  font-style: normal
+
+@font-face 
+  font-family: 'DINPro'
+  src: url('../fonts/DINPro-Regular.eot')
+  src: url('../fonts/DINPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/DINPro-Regular.woff') format('woff'), url('../fonts/DINPro-Regular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+
+@font-face 
+  font-family: 'DINPro'
+  src: url('../fonts/DINPro-Bold.eot')
+  src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/DINPro-Bold.woff') format('woff'),url('../fonts/DINPro-Bold.ttf') format('truetype')
+  font-weight: bold
+  font-style: normal
+@font-face
+  font-family: 'PT Sans'
+  src: url('pts55f_w.eot')
+  src: local("PT Sans"), url('../fonts/PTS55F_W.eot?#iefix') format("embedded-opentype"), url('../fonts/PTS55F_W.woff') format("woff"), url('../fonts/PTS55F_W.ttf') format("truetype"), url('../fonts/PTS55F_W.svg#PTSans-Regular') format("svg")
+
+
+@font-face
+  font-family: 'PT Sans'
+  font-style: italic
+  src: url('../fonts/pts56f_w.eot')
+  src: local("PT Sans Italic"), url('../fonts/PTS56F_W.eot?#iefix') format("embedded-opentype"), url('../fonts/PTS56F_W.woff') format("woff"), url('../fonts/PTS56F_W.ttf') format("truetype"), url('../fonts/PTS56F_W.svg#PTSans-Italic') format("svg")
+
+
+@font-face
+  font-family: 'PT Sans'
+  src: url('pts75f_w.eot')
+  font-style: normal
+  font-weight: bold
+  src: local("PT Sans Bold"), url('../fonts/PTS75F_W.eot?#iefix') format("embedded-opentype"), url('../fonts/PTS75F_W.woff') format("woff"), url('../fonts/PTS75F_W.ttf') format("truetype"), url('../fonts/PTS75F_W.svg#PTSans-Bold') format("svg")
+
+
+@font-face
+  font-family: 'PT Sans'
+  font-style: italic
+  font-weight: bold
+  src: url('../fonts/pts76f_w.eot')
+  src: local("PT Sans Bold Italic"), url('../fonts/PTS76F_W.eot?#iefix') format("embedded-opentype"), url('../fonts/PTS76F_W.woff') format("woff"), url('../fonts/PTS76F_W.ttf') format("truetype"), url('../fonts/PTS76F_W.svg#PTSans-BoldItalic') format("svg")
+
+
+@font-face
+  font-family: 'PT Sans Caption'
+  src: url('ptc55f_w.eot')
+  src: local("PT Sans Caption"), url('PTC55F_W.eot?#iefix') format("embedded-opentype"), url('PTC55F_W.woff') format("woff"), url('PTC55F_W.ttf') format("truetype"), url('PTC55F_W.svg#PTSans-Caption') format("svg")
+
+
+@font-face
+  font-family: 'PT Sans Caption'
+  font-weight: bold
+  src: url('ptc75f_w.eot')
+  src: local("PT Sans Caption Bold"), url('../fonts/PTC75F_W.eot?#iefix') format("embedded-opentype"), url('../fonts/PTC75F_W.woff') format("woff"), url('../fonts/PTC75F_W.ttf') format("truetype"), url('../fonts/PTC75F_W.svg#PTSans-CaptionBold') format("svg")
+
+
+@font-face
+  font-family: 'PT Sans Narrow'
+  src: url('ptn57f_w.eot')
+  src: local("PT Sans Narrow"), url('PTN57F_W.eot?#iefix') format("embedded-opentype"), url('PTN57F_W.woff') format("woff"), url('PTN57F_W.ttf') format("truetype"), url('PTN57F_W.svg#PTSans-Narrow') format("svg")
+
+
+@font-face
+  font-family: 'PT Sans Narrow'
+  font-weight: bold
+  src: url('ptn77f_w.eot')
+  src: local("PT Sans Narrow Bold"), url('PTN77F_W.eot?#iefix') format("embedded-opentype"), url('PTN77F_W.woff') format("woff"), url('PTN77F_W.ttf') format("truetype"), url('PTN77F_W.svg#PTSans-NarrowBold') format("svg")
+body
+  font-family: 'PT Sans'
+.hide
+  display: block !important
+.txt
+  font-weight: 300 !important
+.preloader
+  width: 100%
+  height: 100%
+  position: fixed 
+  display: none
+  z-index: 9999
+  background: white
+  .inner
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    .lines 
+      width: 80px
+      height: 40px
+      position: absolute
+      
+      .line 
+        width: 80px
+        height: 10px
+        background-color: $dark-blue
+        position: absolute
+        clip: rect(0, 0, 20px, 0)
+        
+        &.line-1 
+          top: 0
+          animation: slide 2s ease 0s infinite
+        
+        
+        &.line-2 
+          top: 15px
+          animation: slide 2s ease 0.25s infinite
+            
+        
+        
+        &.line-3 
+          top: 30px
+          animation: slide 2s ease 0.5s infinite
+        
+      
+
+      
+      
+  
+
+
+
+ 
+
+.logo-green
+  
+  .inner
+
+    svg 
+      transform: rotate(90deg)
+      path 
+        fill: $green !important
+  
+    
+.move-green
+  transform: rotate(90deg) translate(0%) !important
+.move-blue
+  transform: rotate(270deg) translate(0%) !important
+.move
+  transform: translate(0) !important
+.text-green
+  position: absolute
+  
+  width: 190px
+  top: 240px
+  left: -60px
+  transition: all 1s ease
+  transform: rotate(90deg) translate(-450%)
+   
+  .txt
+    color: $green !important 
+.text-blue
+  position: absolute
+  height: 100px
+  width: 200px
+  top: 150px
+  left: 160px
+  transition: all 1s ease
+  transform: rotate(270deg) translate(150%)
+  
+  .txt
+    color: #137EC2 !important 
+.logo-blue
+  
+  .inner
+
+    svg 
+      transform: rotate(270deg)
+      path 
+        fill: #137EC2 !important
+.headhesive--stick
+  transform: translateY(0) !important
+.header
+  background: #C8C8C8
+  position: fixed
+  padding: 20px 0
+  z-index: 250
+  width: 100%
+  transform: translateY(-100%)
+  transition: all 0.5s ease
+
+  .container
+    font-family: 'DINPro'
+    .flex-item
+      @extend .row
+      justify-content: space-between
+      a 
+        font-size: 16px
+        color: white  
+        font-weight: bold
+        line-height: 35px
+        outline: none !important
+        text-transform: uppercase
+        position: relative 
+        
+        &:hover
+          &:before
+            width: 100%
+        &:not(:last-of-type)
+          margin-right: 20px
+        &:before
+          position: absolute
+          content: ''
+          bottom: 0px
+          width: 0%
+          height: 2px 
+          left: 50%
+          transform: translate(-50%)
+          z-index: 2
+          background: white
+          transition: all 0.5s ease
+          
+#head
+  font-family: 'PT Sans'
+  min-width: 1300px
+  @extend .row
+  .flex-inner
+    @extend .column
+    justify-content: flex-start
+    &:first-of-type
+      width: 30%
+    &:last-of-type
+      width: 70%
+    .logo
+      margin-top: 50px
+      max-width: 58%
+      @extend .column
+      .inner
+        @extend .column
+        align-items: center
+        align-self: flex-start
+        svg 
+          transition: all 1s ease
+          width: 85px
+          margin-left: 80px
+          path
+            transition: all 1s ease
+            fill: $purple
+
+        .logo-txt
+          font-family: 'PT Sans'
+          font-size: 50px
+          font-weight: 600
+          line-height: 50px
+          margin-left: 80px
+      .text
+        
+        
+        position: absolute
+        height: 100px
+        width: 190px
+        top: 150px
+        transition: all 0.5s ease
+        .txt
+          position: absolute
+          color: $purple
+          align-self: flex-end
+          font-size: 14px
+          
+          transition: transform 1s ease 
+          transform: translate(-750%)
+          bottom: 0
+          right: -87px
+    nav 
+      margin-top: 170px
+
+      @extend .column
+      align-items: flex-start
+      a 
+        margin-top: 25px
+        font-size: 20px
+        transition: all 1s ease
+        &:hover
+          color: $purple
+  .flex-inner:last-of-type
+    position: relative
+    @extend .column
+    justify-content: center 
+    .main 
+      position: absolute
+      z-index: 2
+      width: 700px
+      margin-left: 5%
+      top: 50%
+      left: -350px
+      .title
+        font-family: 'Ekibastuz Rg' 
+        
+        font-size: 60px
+        line-height: 90px
+        
+        letter-spacing: 1px
+        color: black 
+        span
+          svg 
+            max-width: 44px
+            max-height: 44px
+            path 
+              fill: black
+
+          &:last-of-type
+            svg
+              max-height: 50px
+              max-width: 47px
+              path 
+                fill: black
+      .txt
+        font-size: 20px
+        color: white
+        line-height: 30px
+        font-weight: 300
+        color: black
+        
+    .slider
+      .slide
+        background: url('../images/001.jpg') no-repeat center center 
+        background-size: cover
+        flex: 1 1 auto
+        outline: none
+        height: 675px
+        &:nth-of-type(3)
+          background: url('../images/002.jpg') no-repeat center center 
+          background-size: cover
+        &:nth-of-type(4)
+          background: url('../images/003.jpg') no-repeat center center 
+          background-size: cover
+
+#university
+  margin-top: 80px
+  .container
+    @extend .column
+    .txt
+
+      font-size: 16px
+      line-height: 30px
+      
+.block
+  .container
+    @extend .row
+    flex-wrap: wrap
+    .flex-inner
+      width: 47%
+      @extend .row
+      
+      justify-content: flex-start
+      text-align: left
+      .flex-item
+        width: 100%
+        margin-top: 50px
+        
+        .title
+          font-family: 'Pt Sans'
+          font-weight: 500
+          font-size: 30px
+          line-height: 35px
+          text-align: left
+        .txt
+          margin-top: 40px
+          font-size: 16px
+          line-height: 30px
+          width: 100%
+          @extend .row
+          justify-content: space-between
+          span
+            width: 32%
+           
+            
+
+
+            
+
+      .image
+        
+        overflow: hidden
+        position: relative
+        transform: rotate(45deg)
+        width: 250px
+        height: 250px
+        margin-left: 100px
+        margin-top: 100px
+
+        .img 
+          width: 160%
+          height: 160%
+          position: absolute
+          transform: rotate(-45deg)
+          overflow: hidden
+          left: -58px
+          top: -58px
+          img 
+            width: 100%
+            height: 100%
+      
+        
+        .image
+          transform: rotate(0)
+          width: 350px
+          height: 350px
+          margin-left: 180px
+          .img
+            width: 100%
+            height: 100%
+            transform: rotate(0)
+#institute
+  padding-top: 150px
+  .container
+    @extend .row
+    align-items: flex-start
+    .social
+      @extend .row
+      align-items: flex-end
+      a 
+        opacity: 0.5
+        transition: all 0.5s ease
+        margin-right: 40px
+        &:hover
+          opacity: 1
+        svg 
+          width: 20px
+          height: 20px
+    .flex-item:first-of-type
+      width: 55%
+      .title
+        font-family: 'DINPro'
+        font-weight: bold
+        font-size: 30px
+        line-height: 40px
+        font-weight: 500
+        margin-bottom: 70px
+        font-family: 'DINPro'
+        font-weight: bold
+      .txt
+        @extend .row
+        width: 80%
+        font-size: 18px
+        line-height: 20px
+        margin-top: 20px
+        font-weight: 300
+        div:first-child
+          margin-right: 5px
+.appriciate
+  padding-top: 50px
+  .container
+    @extend .column
+    .img
+      position: absolute
+      height: 450px
+      width: 450px
+      z-index: -1
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    .title
+      font-family: 'DINPro'
+      font-weight: bold
+      font-size: 45px
+      line-height: 50px
+      font-weight: 600
+      
+    .flex-inner
+      margin-top: 30px
+      @extend .row
+      .flex-item
+        @extend .row
+        justify-content: flex-start
+        align-items: center
+        color: black
+        min-height: 170px
+        padding: 30px
+        padding-bottom: 0
+        .flex
+
+          
+          .title
+            font-family: 'PT Sans' 
+            font-weight: 500
+            font-size: 30px
+            line-height: 30px
+
+          .txt
+            margin-top: 30px
+            font-size: 16px
+            line-height: 25px
+          svg 
+            width: 100px
+            
+
+        .flex
+          &:last-of-type
+            height: 200px
+            margin-left: 30px
+           
+      .inner
+        width: 49%
+        &:first-of-type
+          .flex-item     
+            margin-top: 22px    
+           
+        &:last-of-type
+          
+          .flex-item
+            margin-top: 22px 
+            
+
+          
+#programs
+  margin-top: 100px
+  padding: 50px 0 100px 0
+  background: #ececec
+  min-width: 1200px
+  .container
+    @extend .column
+    .head
+      @extend .row
+      align-items: center
+      .title
+        font-family: 'Ekibastuz Rg' 
+        font-weight: bold
+        font-size: 45px
+        line-height: 60px
+        font-weight: 600
+        white-space: nowrap
+        font-weight: bold
+        svg 
+          max-width: 18px
+          path 
+            fill: black
+      .flex-inner
+        width: 50%
+        @extend .row
+        flex-wrap: wrap
+        justify-content: flex-end
+        .flex-item
+          width: 23%
+          margin-top: 2%
+          padding: 10px 0
+          font-size: 16px
+          font-weight: 500
+          text-align: center
+          cursor: pointer
+          margin-left: 2%
+          transition: color 0.5s ease
+          border: 3px solid transparent
+          &:hover
+            color: $green
+        .active
+          border: 3px solid $green
+          color: $green
+    .grid
+      margin-top: 50px
+      min-height: 330px
+      @extend .row
+      flex-wrap: wrap 
+      .txt
+        color: black !important
+      .deactive
+        transform: rotateY(180deg)
+        .title
+          font-family: 'Pt Sans'
+          font-weight: bold
+          opacity: 0
+        .txt
+          opacity: 0
+        &:after
+          opacity: 0
+        .line
+          min-width: 124%
+          height: 2px 
+          background: $green
+          transform: rotate(37deg)
+          position: absolute
+          top: 49.5%
+          left: -12%
+          opacity: 1 !important
+          transition: all 0.5s ease
+      .flex-item
+        width: 32.5%
+        min-height: 250px
+        margin-top: 15px
+        
+        cursor: pointer
+        transition: all 1s ease
+        background: white
+        .title
+          font-family: 'Pt Sans'
+          font-weight: bold
+          padding: 10px 15px
+          font-size: 37px
+          line-height: 40px
+          font-weight: 500
+          transition: all 0.5s ease
+          color: white !important
+
+        .txt
+          padding: 10px 15px
+          font-size: 16px
+          line-height: 25px
+          
+          width: 85%
+          font-weight: 300
+          transition: all 0.5s ease
+        .line
+          transition: all 0.5s ease
+      .green, .green1
+        
+        
+        position: relative
+        .title
+          font-family: 'Pt Sans'
+          font-weight: bold
+          background: $green
+        .txt
+          color: black
+        .line
+          opacity: 0
+          background: $green
+
+        &:after
+          display: none
+          position: absolute
+          content: url('../images/arrow.svg')
+          bottom: 20px
+          right: 20px
+          width: 20px
+          
+      .blue, .blue1
+        
+        color: $blue
+        position: relative
+        .title
+          font-family: 'Pt Sans'
+          font-weight: bold
+          background: $blue
+        .line
+          background: $blue
+          opacity: 0
+        &:after
+          display: none
+          position: absolute
+          content: url('../images/arrow-blue.svg')
+          width: 20px
+          right: 20px
+          bottom: 20px
+
+         
+          
+      .yellow
+        
+        color: $yellow
+        position: relative
+        .title
+          font-family: 'Pt Sans'
+          font-weight: bold
+          background: $yellow
+        .line
+          opacity: 0
+          background: $yellow
+        &:after
+          display: none
+          position: absolute
+          content: url('../images/arrom-yellow.svg')
+          bottom: 20px
+          right: 20px
+         
+          width: 20px
+
+    
+
+#news
+  margin-top: 50px
+  padding-top: 50px
+  padding-bottom: 50px
+  background: #ececec
+  min-width: 1200px
+  .container
+    z-index: 10
+    @extend .column
+    .title
+      font-family: 'Ekibastuz Rg' 
+      font-weight: bold
+      font-size: 45px
+      line-height: 50px
+    .button
+      align-self: center 
+      margin-top: 100px
+      background: $dark-blue
+      color: white
+      text-align: center 
+      width: 32.5%
+      height: 50px
+      cursor: pointer
+      font-size: 20px
+      line-height: 20px
+      font-weight: 300
+      display: flex
+      transition: background 0.5s ease
+      span 
+        margin: auto
+      &:hover
+        background: $blue
+    .inner
+      @extend .row
+      .title
+        font-family: 'DINPro'
+        font-weight: bold
+        font-size: 24px
+        
+        font-weight: 500
+        color: white
+      .flex-inner
+        width: 31%
+        min-height: 350px
+        svg 
+          position: absolute
+          width: 45px
+          bottom: 0
+          right: 5%
+        @extend .column
+        
+        .flex-item
+          position: relative
+          padding: 20px 20px
+          margin-top: 44px
+          cursor: pointer
+          overflow: hidden
+          flex: 1 1 auto
+          .spanner
+            position: absolute
+            bottom: 20px
+            right: 20px
+            svg 
+              width: 20px
+              path 
+                fill: white !important
+          &:hover
+            .img
+              img 
+                transform: scale(1.25)
+          .img
+            position: absolute
+            min-width: 100%
+            min-height: 100%
+            z-index: -1 
+            left: 0
+            top: 0
+            img 
+              transition: all 1s ease
+          .title
+            font-family: 'DINPro'
+            font-weight: bold
+            font-size: 20px
+            line-height: 35px
+            width: 80%
+            
+                
+        
+              
+#partners
+  margin-top: 50px
+  .container
+    @extend .column
+    .title
+     
+      font-weight: bold
+      font-size: 45px
+      line-height: 55px
+      font-weight: 600
+      font-family: 'Ekibastuz Rg' 
+      font-weight: bold
+    .flex-inner
+      @extend .row
+      flex-wrap: nowrap 
+      justify-content: space-between
+      align-items: center
+      .flex-item
+        margin-top: 80px
+        width: 14%
+        text-align: center
+        
+        svg 
+          width: 150px
+        &:last-of-type
+          svg 
+            width: 100px
+          
+
+
+
+#footer
+  margin-top: 100px 
+  background: $dark-blue
+  padding: 30px 0
+  min-width: 1300px
+  .container
+    @extend .row
+    justify-content: space-between
+    align-items: center
+    color: white
+    .bottom
+      @extend .row
+    .top
+      @extend .column
+      
+      justify-content: flex-start
+      .one 
+       
+        span 
+          text-decoration: underline
+    a 
+      color: white
+      &:hover
+        text-decoration: underline
+    .flex-item
+      @extend .column
+      justify-content: flex-start
+      .title
+        font-family: 'DINPro'
+        font-weight: bold
+        font-size: 16px
+        font-weight: bold
+        font-family: 'DINPro'
+          
+      .content
+        @extend .column
+        margin-top: 20px
+        a
+          margin-top: 5px
+          font-size: 14px
+          font-weight: 300
+    .social
+      @extend .row
+      
+      svg 
+        height: 25px
+        width: 25px
+        margin: 0 10px
+        opacity: 0.5
+        transition: all 0.5s ease
+        path 
+          fill: white
+        &:hover
+          opacity: 1
+        
+
+
+
+
+
+
+      
+
+
+
+
+          

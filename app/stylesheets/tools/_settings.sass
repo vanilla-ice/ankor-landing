@@ -1,0 +1,139 @@
+// COLORS
+
+
+$white: #ffffff
+$black: #010101
+$blue: #00AAB4
+$dark-blue: #017DC5
+$red: #FF1A36
+$orange: #ef7d00
+$yellow: #F69433 
+
+$purple: #EB3C96
+$bright-purple: #EF3F4A
+$pink: #ED3C96
+$dark-pink: #BD85BD
+$pink-hr: #F1C3E3
+$green: #00AB4F
+$light-gray: #9F9F9F
+$mid-gray: #666666
+$dark-gray: #9F9F9F
+$gray: #9b9b9b
+$bright-yellow: #F9C949
+$gray-form: #A8A8A8
+$gray-form-labels: #9E9E9E
+$violet: #753F97
+$primary-color: $gray
+
+$base-font-size: 14
+$tablet-font-size: 14
+$mobile-font-size: 12
+
+$neosans: 'NeoSansW1G', sans-serif
+$roboto: 'Roboto', sans-serif
+// Custom
+
+$text-color: $black
+
+$placeholder-color-reversed: rgba(255,255,255,0.4)
+$placeholder-color: rgba(0,0,0,0.3)
+
+$gradient-colors: $orange, $purple
+$cta-background: $bright-purple
+
+
+$helvetica: 'Helvetica', "Open Sans", sans-serif
+$roboto: 'Roboto', sans-serif
+$slab: 'Roboto Slab', sans-serif
+
+
+
+$title: $slab
+$subtitle: $roboto
+$body: $helvetica
+
+
+*
+  box-sizing: border-box
+
+
+.container
+
+  width: 1300px
+  min-height: 100%
+  margin: 0 auto
+  position: relative
+  padding: 0 65px
+  text-align: left
+  font-family: 'PT Sans'
+  overflow: hidden
+
+a
+  text-decoration: none
+  color: black
+
+html,body
+  font-size: #{$base-font-size}px
+  line-height: #{$base-font-size*1.5}px
+  color: $black
+
+  +tablet
+    font-size: #{$tablet-font-size}px
+
+  +mobile
+    font-size: #{$mobile-font-size}px
+
+
+.column
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
+
+.row
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+
+a 
+  outline: none !important
+fieldset
+  border: 0
+  margin: 0
+  padding: 0
+
+textarea
+  line-height: 1.6
+  resize: vertical
+
+p
+  color: inherit
+
+@keyframes my
+  0%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(50px)
+
+  100%
+    transform: translateY(0)
+@keyframes myanim
+  0%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(20px)
+
+  100%
+    transform: translateY(0)
+@keyframes myanimation
+  0%
+    transform: translateY(60px)
+
+  50%
+    transform: translateY(0)
+
+  100%
+    transform: translateY(60px)
+
+

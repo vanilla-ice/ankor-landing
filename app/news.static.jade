@@ -1,0 +1,107 @@
+doctype html
+head
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  link(rel="stylesheet" href="stylesheets/app.css")
+  <link rel="shortcut icon" href="/images/fav.png" type="image/png">
+  title
+    |Университет Ancor
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+  </script>
+  script.
+    require('initialize');
+
+body#index-two
+
+  .preloader.hide
+    .inner
+      .lines
+        .line.line-1
+        .line.line-2
+        .line.line-3
+  .header
+    .container
+      .flex-item
+        a(href="#head") Главная 
+        a(href="#about-pr") Новость
+        a(href="#footer") Контакты
+
+  #head
+    
+    .flex-inner
+      a(href="index.html").logo
+        .inner
+          .img
+            img.svg(src="images/img_logo.svg")
+          .logo-txt
+            |ancor
+        .txt
+          |КОРПОРАТИВНЫЙ 
+          br
+          |УНИВЕРСИТЕТ
+    .flex-inner
+      .main
+        .title
+          |Новость
+          
+      .slider.slider-two      
+        .slide
+
+
+    
+
+  .who
+    .container
+      .title
+        |Новость
+      .txt
+        |Текст 
+
+    
+  .map
+    #map
+    .inner
+      .container
+        .label
+          .txt
+            |Мероприятие состоится
+            br
+            |20 ноября 2015 года
+          .txt
+            |9:30 - Сбор участников
+            br
+            |10:00 - Время начала
+            br
+            |14:00 - Время окончания
+          .txt.
+            Место проведения - офис АНКОР
+          .txt.
+            Адрес: Москва, ул. Станиславского,
+            <br>
+            д. 21, стр. 3, 5-й этаж
+
+    
+
+ 
+
+  #footer
+    .container
+      .flex-item.top
+        span
+          |© 2004-2015 АНКОР
+
+        span.one
+          |Эл. почта: 
+          span 
+            |info@ancor.ru
+          br
+          |Телефон: +7 (495) 926-41-00
+      .flex-item.social
+        a(href="")
+          img.svg(src="images/icon_soc_vk.svg")
+        a(href="")
+          img.svg(src="images/icon_soc_fb.svg")
+      .flex-item.bottom
+        |Прокачались - 
+        a(href="http://www.yourockdude.com" target="_blank") 
+          |&nbspyourockdude!
